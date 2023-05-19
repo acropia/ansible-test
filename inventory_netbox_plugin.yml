@@ -1,0 +1,8 @@
+plugin: netbox.netbox.nb_inventory
+group_by:
+  - device_roles
+query_filters:
+  - role: network-edge-router
+device_query_filters:
+  - has_primary_ip: 'true'
+  - tenant__n: internal
